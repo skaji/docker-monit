@@ -8,7 +8,7 @@ setup sshd + mysqld + redis-server with monit.
 ### how
 
     > git clone git://github.com/shoichikaji/docker-monit
-    > cd dockerfile-monit
+    > cd docker-monit
     > docker build -t TAG .
     > docker run -d -p 10022:22 -p 2812:2812 TAG
 
