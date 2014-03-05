@@ -1,0 +1,11 @@
+#!/usr/bin/perl
+use strict;
+use warnings;
+
+open STDIN,  "</dev/null";
+open STDOUT, ">/dev/null";
+open STDERR, ">/dev/null";
+fork and exit;
+
+my $mysqld = "/usr/sbin/mysqld";
+exec {$mysqld} $mysqld;
