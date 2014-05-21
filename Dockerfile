@@ -4,7 +4,7 @@ MAINTAINER Shoichi Kaji (skaji@cpan.org)
 ## NOTE: you should disable SELinux
 
 ENV DEBIAN_FRONTEND noninteractive
-RUN echo "deb http://jp.archive.ubuntu.com/ubuntu precise main universe" > /etc/apt/sources.list
+ADD sources.list /etc/apt/sources.list
 RUN apt-get update -y --force-yes
 RUN apt-get install monit -y --force-yes
 
